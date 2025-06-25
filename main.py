@@ -7,7 +7,7 @@ def main():
     """
     call `output.print_output` on the result of `words.build_full_output()`
     """
-
+    output.print_output(words.build_full_output())
 
 if __name__ == "__main__":
     # isue 19: call the main function

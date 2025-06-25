@@ -7,7 +7,7 @@ def get_p_upper(letter: str) -> list[str]:
     returns a list containing the results of 
     `utility.append_space(utility.repeat_4(letter))` and `utility.sandwich_3_spaces(letter)`
     """
-    return [utility.append_space(utility.repeat_4(letter)), utility.sandwich_3_spaces(letter)]
+    return [utility.append_space(utility.repeat_4(letter)), utility.sandwich_3_spaces(letter), ]
 
 
 # issue 9
@@ -16,7 +16,7 @@ def get_p_lower(letter: str) -> list[str]:
     returns a list containing the results of `utility.append_space(utility.repeat_4(letter))`
     and two times the result of `utility.append_4_spaces(letter),`
     """
-    return []
+    return [utility.append_space(utility.repeat_4(letter)), utility.append_4_spaces(letter), utility.append_4_spaces(letter)]
 
 
 # issue 10
@@ -25,7 +25,7 @@ def get_y_upper(letter: str) -> list[str]:
     returns a list containing the results of `utility.sandwich_3_spaces(letter)`
     and `utility.intersperse_spaces(letter)`
     """
-    return []
+    return [utility.sandwich_3_spaces(letter), utility.intersperse_spaces(letter)]
 
 
 # issue 11
@@ -43,7 +43,7 @@ def get_o_upper(letter: str) -> list[str]:
     returns a list containing the results of `utility.sandwich_3_letters(letter)`
     and `utility.sandwich_3_spaces(letter)`
     """
-    return [utility.sandwich_3_letters(letter),utility.sandwich_3_spaces(letter)]
+    return [utility.sandwich_3_letters(letter), utility.sandwich_3_spaces(letter)]
 
 
 # issue 13
@@ -52,7 +52,7 @@ def get_o_lower(letter: str) -> list[str]:
     returns a list containing the result of `utility.sandwich_3_spaces(letter)` two
     times and the result of `utility.sandwich_3_letters(letter)`
     """
-    return []
+    return [utility.sandwich_3_spaces(letter), utility.sandwich_3_spaces(letter), utility.sandwich_3_letters(letter)]
 
 
 # issue 14
@@ -60,7 +60,7 @@ def get_p(letter: str) -> list[str]:
     """
     returns the sum of get_p_upper(letter) and get_p_lower(letter)
     """
-    return []
+    return get_p_upper(letter) + get_p_lower(letter)
 
 
 # issue 15

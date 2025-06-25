@@ -60,4 +60,4 @@ def sandwich_3_letters(letter: str) -> str:
     returns a string consisting of three times `letter` in between spaces
     example: sandwich_3_letters("a") should return " aaa "
     """
-    return ""
+    return " " + letter + letter + letter + " "
